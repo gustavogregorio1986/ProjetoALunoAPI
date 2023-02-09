@@ -1,0 +1,12 @@
+C:\ProjetoALunoAPI\ProjetoALunoAPI\ProjetoALunoAPI.Dominio\bin\Debug\net5.0\ProjetoALunoAPI.Dominio.deps.json
+C:\ProjetoALunoAPI\ProjetoALunoAPI\ProjetoALunoAPI.Dominio\bin\Debug\net5.0\ProjetoALunoAPI.Dominio.dll
+C:\ProjetoALunoAPI\ProjetoALunoAPI\ProjetoALunoAPI.Dominio\bin\Debug\net5.0\ProjetoALunoAPI.Dominio.pdb
+C:\ProjetoALunoAPI\ProjetoALunoAPI\ProjetoALunoAPI.Dominio\obj\Debug\net5.0\ProjetoALunoAPI.Dominio.csproj.AssemblyReference.cache
+C:\ProjetoALunoAPI\ProjetoALunoAPI\ProjetoALunoAPI.Dominio\obj\Debug\net5.0\ProjetoALunoAPI.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProjetoALunoAPI\ProjetoALunoAPI\ProjetoALunoAPI.Dominio\obj\Debug\net5.0\ProjetoALunoAPI.Dominio.AssemblyInfoInputs.cache
+C:\ProjetoALunoAPI\ProjetoALunoAPI\ProjetoALunoAPI.Dominio\obj\Debug\net5.0\ProjetoALunoAPI.Dominio.AssemblyInfo.cs
+C:\ProjetoALunoAPI\ProjetoALunoAPI\ProjetoALunoAPI.Dominio\obj\Debug\net5.0\ProjetoALunoAPI.Dominio.csproj.CoreCompileInputs.cache
+C:\ProjetoALunoAPI\ProjetoALunoAPI\ProjetoALunoAPI.Dominio\obj\Debug\net5.0\ProjetoALunoAPI.Dominio.dll
+C:\ProjetoALunoAPI\ProjetoALunoAPI\ProjetoALunoAPI.Dominio\obj\Debug\net5.0\refint\ProjetoALunoAPI.Dominio.dll
+C:\ProjetoALunoAPI\ProjetoALunoAPI\ProjetoALunoAPI.Dominio\obj\Debug\net5.0\ProjetoALunoAPI.Dominio.pdb
+C:\ProjetoALunoAPI\ProjetoALunoAPI\ProjetoALunoAPI.Dominio\obj\Debug\net5.0\ref\ProjetoALunoAPI.Dominio.dll
