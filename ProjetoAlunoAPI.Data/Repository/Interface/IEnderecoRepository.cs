@@ -11,12 +11,12 @@ namespace ProjetoAlunoAPI.Data.Repository.Interface
     {
         void Adicionar(Endereco endereco);
 
-        void UpdateAluno(Endereco endereco);
+        void UpdateEndereco(Endereco endereco);
 
         void DeleteEndereco(int id);
 
         List<Endereco> ListarEndereco();
 
-        Endereco AlunoPorId(int id);
+        Endereco EnderecoPorId(int id);
     }
 }
