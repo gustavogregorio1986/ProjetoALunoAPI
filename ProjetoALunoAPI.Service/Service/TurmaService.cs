@@ -30,7 +30,7 @@ namespace ProjetoALunoAPI.Service.Service
 
         public Turma TurmaPorId(int id)
         {
-            _repository.TurmaPorId(id);
+           return _repository.TurmaPorId(id);
         }
 
         public void UpdateTurma(Turma turma)
