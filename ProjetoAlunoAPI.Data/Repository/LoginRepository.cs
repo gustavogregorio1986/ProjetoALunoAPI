@@ -13,7 +13,7 @@ namespace ProjetoAlunoAPI.Data.Repository
     {
         private readonly ProjetoAlunoContexto _db;
 
-        public void Adicionar(Login login)
+        public void Adicionar(LoginDTO login)
         {
             _db.Add(login);
         }
@@ -23,17 +23,17 @@ namespace ProjetoAlunoAPI.Data.Repository
             _db.Remove(id);
         }
 
-        public List<Login> ListarLogin()
+        public List<LoginDTO> ListarLogin()
         {
-            return _db.Set<Login>().ToList();
+            return _db.Set<LoginDTO>().ToList();
         }
 
-        public Login LoginPorId(int id)
+        public LoginDTO LoginPorId(int id)
         {
-            return _db.Set<Login>().FirstOrDefault(x => x.Id == id);
+            return _db.Set<LoginDTO>().FirstOrDefault(x => x.Id == id);
         }
 
-        public void UpdateLogin(Login login)
+        public void UpdateLogin(LoginDTO login)
         {
             _db.Update(login);
         }

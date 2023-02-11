@@ -13,7 +13,7 @@ namespace ProjetoAlunoAPI.Data.Repository
     {
         private readonly ProjetoAlunoContexto _db;
 
-        public void Adicionar(Endereco endereco)
+        public void Adicionar(EnderecoDTO endereco)
         {
             _db.Add(endereco);
         }
@@ -23,17 +23,17 @@ namespace ProjetoAlunoAPI.Data.Repository
             _db.Remove(id);
         }
 
-        public Endereco EnderecoPorId(int id)
+        public EnderecoDTO EnderecoPorId(int id)
         {
-            return _db.Set<Endereco>().FirstOrDefault(x => x.Id == id);
+            return _db.Set<EnderecoDTO>().FirstOrDefault(x => x.Id == id);
         }
 
-        public List<Endereco> ListarEndereco()
+        public List<EnderecoDTO> ListarEndereco()
         {
-            return _db.Set<Endereco>().ToList();
+            return _db.Set<EnderecoDTO>().ToList();
         }
 
-        public void UpdateEndereco(Endereco endereco)
+        public void UpdateEndereco(EnderecoDTO endereco)
         {
             _db.Update(endereco);
         }

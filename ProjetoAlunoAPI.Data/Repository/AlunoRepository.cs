@@ -13,14 +13,14 @@ namespace ProjetoAlunoAPI.Data.Repository
     {
         private readonly ProjetoAlunoContexto _db;
 
-        public void Adicionar(Aluno aluno)
+        public void Adicionar(AlunoDTO aluno)
         {
             _db.Add(aluno);
         }
 
-        public Aluno AlunoPorId(int id)
+        public AlunoDTO AlunoPorId(int id)
         {
-            return _db.Set<Aluno>().FirstOrDefault(x => x.Id == id);
+            return _db.Set<AlunoDTO>().FirstOrDefault(x => x.Id == id);
         }
 
         public void DeleteAluno(int id)
@@ -28,12 +28,12 @@ namespace ProjetoAlunoAPI.Data.Repository
             _db.Remove(id);
         }
 
-        public List<Aluno> ListarAluno()
+        public List<AlunoDTO> ListarAluno()
         {
-            return _db.Set<Aluno>().ToList();
+            return _db.Set<AlunoDTO>().ToList();
         }
 
-        public void UpdateAluno(Aluno aluno)
+        public void UpdateAluno(AlunoDTO aluno)
         {
             _db.Update(aluno);
         }

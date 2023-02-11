@@ -13,14 +13,14 @@ namespace ProjetoAlunoAPI.Data.Repository
     {
         private readonly ProjetoAlunoContexto _db;
 
-        public void Adicionar(Administrador administrador)
+        public void Adicionar(AdministradorDTO administrador)
         {
             _db.Add(administrador);
         }
 
-        public Administrador AdministradorPorId(int id)
+        public AdministradorDTO AdministradorPorId(int id)
         {
-            return _db.Set<Administrador>().FirstOrDefault(x => x.Id == id);
+            return _db.Set<AdministradorDTO>().FirstOrDefault(x => x.Id == id);
         }
 
         public void DeleteAdm(int id)
@@ -28,12 +28,12 @@ namespace ProjetoAlunoAPI.Data.Repository
             _db.Remove(id);
         }
 
-        public List<Administrador> ListarAdm()
+        public List<AdministradorDTO> ListarAdm()
         {
-            return _db.Set<Administrador>().ToList();
+            return _db.Set<AdministradorDTO>().ToList();
         }
 
-        public void UpdateAdm(Administrador administrador)
+        public void UpdateAdm(AdministradorDTO administrador)
         {
             _db.Update(administrador);
         }

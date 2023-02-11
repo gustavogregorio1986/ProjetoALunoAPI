@@ -9,14 +9,14 @@ namespace ProjetoAlunoAPI.Data.Repository.Interface
 {
     public interface IAvaliacaoRepository
     {
-        void Adicionar(Avaliacao avaliacao);
+        void Adicionar(AvaliacaoDTO avaliacao);
 
-        void UpdateAvaliacao(Avaliacao avaliacao);
+        void UpdateAvaliacao(AvaliacaoDTO avaliacao);
 
         void DeleteaAvaliacao(int id);
 
-        List<Avaliacao> ListarAvaliacao();
+        List<AvaliacaoDTO> ListarAvaliacao();
 
-        Avaliacao AvaliacaoPorId(int id);
+        AvaliacaoDTO AvaliacaoPorId(int id);
     }
 }

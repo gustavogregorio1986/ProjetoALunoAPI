@@ -9,14 +9,14 @@ namespace ProjetoAlunoAPI.Data.Repository.Interface
 {
     public interface IMateriaRepository
     {
-        void Adicionar(Materia materia);
+        void Adicionar(MateriaDTO materia);
 
-        void UpdateMateria(Materia materia);
+        void UpdateMateria(MateriaDTO materia);
 
         void DeleteMatewria(int id);
 
-        List<Materia> ListarMateria();
+        List<MateriaDTO> ListarMateria();
 
-        Materia MateriaPorId(int id);
+        MateriaDTO MateriaPorId(int id);
     }
 }

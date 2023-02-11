@@ -13,14 +13,14 @@ namespace ProjetoAlunoAPI.Data.Repository
     {
         private readonly ProjetoAlunoContexto _db;
 
-        public void Adicionar(Avaliacao avaliacao)
+        public void Adicionar(AvaliacaoDTO avaliacao)
         {
             _db.Add(avaliacao);
         }
 
-        public Avaliacao AvaliacaoPorId(int id)
+        public AvaliacaoDTO AvaliacaoPorId(int id)
         {
-            return _db.Set<Avaliacao>().FirstOrDefault(x => x.Id == id);
+            return _db.Set<AvaliacaoDTO>().FirstOrDefault(x => x.Id == id);
         }
 
         public void DeleteaAvaliacao(int id)
@@ -28,12 +28,12 @@ namespace ProjetoAlunoAPI.Data.Repository
             _db.Remove(id);
         }
 
-        public List<Avaliacao> ListarAvaliacao()
+        public List<AvaliacaoDTO> ListarAvaliacao()
         {
-            return _db.Set<Avaliacao>().ToList();
+            return _db.Set<AvaliacaoDTO>().ToList();
         }
 
-        public void UpdateAvaliacao(Avaliacao avaliacao)
+        public void UpdateAvaliacao(AvaliacaoDTO avaliacao)
         {
             _db.Update(avaliacao);
         }

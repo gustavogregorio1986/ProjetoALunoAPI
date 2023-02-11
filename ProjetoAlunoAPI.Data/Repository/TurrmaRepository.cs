@@ -13,7 +13,7 @@ namespace ProjetoAlunoAPI.Data.Repository
     {
         private readonly ProjetoAlunoContexto _db;
 
-        public void Adicionar(Turma turma)
+        public void Adicionar(TurmaDTO turma)
         {
             _db.Add(turma);
         }
@@ -23,17 +23,17 @@ namespace ProjetoAlunoAPI.Data.Repository
             _db.Remove(id);
         }
 
-        public List<Turma> ListarMateria()
+        public List<TurmaDTO> ListarMateria()
         {
-            return _db.Set<Turma>().ToList();
+            return _db.Set<TurmaDTO>().ToList();
         }
 
-        public Turma TurmaPorId(int id)
+        public TurmaDTO TurmaPorId(int id)
         {
-            return _db.Set<Turma>().FirstOrDefault(m => m.Id == id);
+            return _db.Set<TurmaDTO>().FirstOrDefault(m => m.Id == id);
         }
 
-        public void UpdateTurma(Turma turma)
+        public void UpdateTurma(TurmaDTO turma)
         {
             _db.Update(turma);
         }

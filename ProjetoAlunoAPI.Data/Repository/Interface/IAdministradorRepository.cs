@@ -9,14 +9,14 @@ namespace ProjetoAlunoAPI.Data.Repository.Interface
 {
     public interface IAdministradorRepository
     {
-        void Adicionar(Administrador administrador);
+        void Adicionar(AdministradorDTO administrador);
 
-        void UpdateAdm(Administrador administrador);
+        void UpdateAdm(AdministradorDTO administrador);
 
         void DeleteAdm(int id);
 
-        List<Administrador> ListarAdm();
+        List<AdministradorDTO> ListarAdm();
 
-        Administrador AdministradorPorId(int id);
+        AdministradorDTO AdministradorPorId(int id);
     }
 }

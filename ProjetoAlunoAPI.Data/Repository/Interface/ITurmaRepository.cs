@@ -9,14 +9,14 @@ namespace ProjetoAlunoAPI.Data.Repository.Interface
 {
     public interface ITurmaRepository
     {
-        void Adicionar(Turma turma);
+        void Adicionar(TurmaDTO turma);
 
-        void UpdateTurma(Turma turma);
+        void UpdateTurma(TurmaDTO turma);
 
         void DeleteTurma(int id);
 
-        List<Turma> ListarMateria();
+        List<TurmaDTO> ListarMateria();
 
-        Turma TurmaPorId(int id);
+        TurmaDTO TurmaPorId(int id);
     }
 }

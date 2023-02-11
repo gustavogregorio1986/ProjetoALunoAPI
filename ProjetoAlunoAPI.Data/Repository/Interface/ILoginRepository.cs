@@ -9,14 +9,14 @@ namespace ProjetoAlunoAPI.Data.Repository.Interface
 {
     public interface ILoginRepository
     {
-        void Adicionar(Login login);
+        void Adicionar(LoginDTO login);
 
-        void UpdateLogin(Login login);
+        void UpdateLogin(LoginDTO login);
 
         void DeleteLogin(int id);
 
-        List<Login> ListarLogin();
+        List<LoginDTO> ListarLogin();
 
-        Login LoginPorId(int id);
+        LoginDTO LoginPorId(int id);
     }
 }

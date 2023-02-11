@@ -5,13 +5,7 @@ namespace ProjetoALunoAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CadastroController : ControllerBase
+    public class CadastroLoginController : ControllerBase
     {
-       [HttpPost]
-       public ActionResult Cadastrar()
-       {
-
-            return new JsonResult("");
-       }
     }
 }

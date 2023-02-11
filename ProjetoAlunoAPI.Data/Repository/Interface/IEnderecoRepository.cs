@@ -9,14 +9,14 @@ namespace ProjetoAlunoAPI.Data.Repository.Interface
 {
     public interface IEnderecoRepository
     {
-        void Adicionar(Endereco endereco);
+        void Adicionar(EnderecoDTO endereco);
 
-        void UpdateEndereco(Endereco endereco);
+        void UpdateEndereco(EnderecoDTO endereco);
 
         void DeleteEndereco(int id);
 
-        List<Endereco> ListarEndereco();
+        List<EnderecoDTO> ListarEndereco();
 
-        Endereco EnderecoPorId(int id);
+        EnderecoDTO EnderecoPorId(int id);
     }
 }
